@@ -24,8 +24,8 @@ def image_downloader(link_to_image, user_dir):
             request.urlretrieve(link_to_image, full_name)
             return
 
-user_input_link = input("Please enter your Link enclosed in quotes: ")
-user_input_link = user_input_link[1: -1]
+user_input_link = input("Please enter your Link : ")
+# no need for this line -> user_input_link = user_input_link[1: -1]
 print(user_input_link)
 
 directory_to_save = input("Please enter path: ")
